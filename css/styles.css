@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #E5E5E5;
+    box-sizing: border-box;
+}
+
+
+/* stock-photo--d-rendering-of-shutter-door-and-concrete-floor-inside-warehouse-building-for-industrial-background-1570950028 2 */
+
+header {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(3, 21, 47, 0.4) 0%, rgba(3, 21, 47, 0) 71.43%), linear-gradient(0deg, rgba(29, 52, 86, 0.6), rgba(29, 52, 86, 0.6)), url(../img/header_photo.png);
+    background: url(../img/header_photo.png);
+    background-repeat: no-repeat;
+    background-size: 56%;
+    background-color: #3C7EE0;
+    //background-color: linear-gradient(110.8deg, #3C7EE0 36.23%, #1359C2 93.86%);
+}
+
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    /* ���� */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    padding: 7px 12px;
+    /* ������ */
+    background: #F5C723;
+}
+
+h1 {
+    /* ��� ������� */
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 120%;
+    /* identical to box height, or 46px */
+    text-transform: uppercase;
+    /* ������ */
+    color: #2B3139;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 10px 0px;
+}
+
+.headerr__top__info {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 120%;
+    /* or 18px */
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}

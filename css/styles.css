@@ -11,15 +11,13 @@ html {
 body {
     background: #E5E5E5;
     box-sizing: border-box;
+    position: relative;
 }
-
-
-/* stock-photo--d-rendering-of-shutter-door-and-concrete-floor-inside-warehouse-building-for-industrial-background-1570950028 2 */
 
 header {
     position: absolute;
     width: 100vw;
-    height: 70vh;
+    height: 90vh;
     left: 0px;
     top: 0px;
     background: linear-gradient(180deg, rgba(3, 21, 47, 0.4) 0%, rgba(3, 21, 47, 0) 71.43%), linear-gradient(0deg, rgba(29, 52, 86, 0.6), rgba(29, 52, 86, 0.6)), url(../img/header_photo.png);
@@ -27,27 +25,47 @@ header {
     background-repeat: no-repeat;
     background-size: 56%;
     background-color: #3C7EE0;
-    //background-color: linear-gradient(110.8deg, #3C7EE0 36.23%, #1359C2 93.86%);
+    /*background-color: linear-gradient(110.8deg, #3C7EE0 36.23%, #1359C2 93.86%);*/
+}
+
+.header__vertical_line {
+    position: absolute;
+    height: 90vh;
+    left: 56%;
+    width: 0.1rem;
+    border-right: .001rem solid #ffffff;
+    opacity: 0.4;
 }
 
 .header__top {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 3rem 5rem 3rem 5rem;
+}
+
+.header__top__info {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 120%;
+    /* or 18px */
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
 }
 
 .logo {
-    /* ���� */
     /* Auto Layout */
     display: flex;
     flex-direction: row;
-    padding: 7px 12px;
-    /* ������ */
+    padding: 0.5rem 1rem 0.5rem;
     background: #F5C723;
+    margin-top: -0.7rem;
 }
 
-h1 {
-    /* ��� ������� */
+.logo p {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -55,23 +73,148 @@ h1 {
     line-height: 120%;
     /* identical to box height, or 46px */
     text-transform: uppercase;
-    /* ������ */
     color: #2B3139;
     /* Inside Auto Layout */
     flex: none;
     order: 0;
     align-self: center;
-    margin: 10px 0px;
+    margin: 1rem 0rem;
 }
 
-.headerr__top__info {
+.phone {
+    font-size: 2rem;
+    padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+    font-weight: bold;
+}
+
+.call_button button {
     font-family: Source Sans Pro;
     font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 120%;
-    /* or 18px */
-    display: flex;
-    flex-direction: column;
+    background: #30C17B;
     color: #FFFFFF;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 120%;
+    font-size: 1rem;
+}
+
+.call_button button img {
+    padding-right: 1rem;
+}
+
+.header__bottom {
+    display: flex;
+}
+
+.header__slogan {
+    font-weight: 900;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+    width: 56%;
+    padding: 4rem 5rem 4rem 8.5rem;
+    display: block
+}
+
+.header__slogan button {
+    font-style: normal;
+    background: transparent;
+    color: #FFFFFF;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    outline: none;
+    border: 0.1rem solid #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 120%;
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+.header__slogan button:hover {
+    color: #3C7EE0;
+    background: #ffffff;
+}
+
+ul>li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.line,
+.arrow {
+    vertical-align: middle;
+}
+
+.line {
+    width: 15%;
+    margin-right: -0.5rem;
+}
+
+.arrow {
+    width: 7%;
+}
+
+menu {
+    margin-top: 6rem;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__bottom__scroll_down {
+    text-align: right;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+.header__bottom__scroll_down a:hover {
+    color: #30C17B;
+}
+
+.header__bottom__advantages {
+    padding: 6rem 0rem 1rem 9rem;
+}
+
+.header__bottom__advantages__piece {
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.header__bottom__advantages__piece__img {
+    padding: 0.5rem;
+    background: #FFFFFF;
+}
+
+.header__bottom__advantages__piece__img img {
+    width: 5rem;
+}
+
+.header__bottom__advantages__piece__text {
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.header__bottom__advantages__piece__text p:nth-child(1) {
+    font-weight: 900;
+    line-height: 130%;
+    font-size: 1.8rem;
+    /* or 26px */
+    text-transform: uppercase;
 }

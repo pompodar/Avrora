@@ -10,7 +10,9 @@
     <meta name="Svjatoslav Kachmar" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="./libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/owl-carousel/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -54,6 +56,15 @@
                 </div>
             </div>
             <div class="header__bottom">
+                <div class="slider" id="main-slider">
+                    <!-- outermost container element -->
+                    <div class="slider-wrapper">
+                        <!-- innermost wrapper element -->
+                        <img src="./img/header_photo.png" class="slide">
+                        <img src="http://lorempixel.com/1024/400/city" alt="Third" class="slide" />
+                    </div>
+                </div>
+
                 <div class="header__slogan">
                     <h1>
                         ООО «Аврора»
@@ -74,15 +85,19 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./img/arrow.png" alt="" class="arrow"> О нас</li>
-                            </a>
+                                    <img src="./img/line.png" alt="" class="line">
+                                    <img src="./img/arrow.png" alt="" class="arrow"> О нас
+                                </a>
+                            </li>
                             <li>
                                 <a href="#">
+                                    <img src="./img/line.png" alt="" class="line">
                                     <img src="./img/arrow.png" alt="" class="arrow"> Каталог
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
+                                    <img src="./img/line.png" alt="" class="line">
                                     <img src="./img/arrow.png" alt="" class="arrow"> Контакты
                                 </a>
                             </li>
@@ -149,7 +164,64 @@
             </div>
         </div>
     </header>
-    <script src="js/scripts.js"></script>
+    <main>
+        <section class="services">
+            <p>
+                Мы предлагаем
+            </p>
+            <p>
+                Наши услуги
+            </p>
+            <div class="services__description">
+                <h2 class="services__description__text">
+                    Современные высокопрочные промышленные бетонные полы сочетают в себе высокую функциональность и эстетическую привлекательность. Такие полы служат долго и не требуют ремонта.
+                </h2>
+                <button class="services__description__button">
+                    Смотреть все услуги
+                        <img src="./img/line.png" alt="" class="services__description__button line">
+                        <img src="./img/arrow.png" alt="" class="services__description__button arrow">
+                </button>
+            </div>
+            <div class="services__slider">
+                <div class="owl-carousel">
+                    <div class="owl-carousel__item">
+                        <img src="./img/heh.jpg" alt="">
+                        <div class="services__slider__additional_pics">
+                            <img src="./img/heh.jpg" alt="">
+                            <img src="./img/heh.jpg" alt="">
+                            <img src="./img/heh.jpg" alt="">
+                            <img src="./img/heh.jpg" alt="">
+                        </div>
+                        <p>
+                            price
+                        </p>
+                    </div>
+                    <div class="owl-carousel__item">
+                        <img src=" ./img/heh.jpg " alt=" ">
+                    </div>
+                    <div class="owl-carousel__item">
+                        <img src="./img/header_photo.png" alt="">
+                    </div>
+                    <div class="owl-carousel__item">
+                        <img src=" ./img/heh.jpg " alt=" ">
+                    </div>
+                    <div class="owl-carousel__item">
+                        <img src="./img/header_photo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="range">
+                    <input type="range" min="0" max="100" step="2" value="20" oninput="CheckRange()" id="myRange">
+                    <input type="text" id="myRangeInput" value="20" oninput="CheckRange()">
+                </div>
+                <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+                <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>

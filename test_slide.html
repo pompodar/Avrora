@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Avrora</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="Svjatoslav Kachmar" content="SitePoint">
+    <link rel="stylesheet" href="./libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/owl-carousel/owl.theme.default.min.css">
+    <style>
+        .owl-carousel img {
+            height: 300px;
+        }
+        
+        #myRange {
+            height: 2px;
+        }
+        
+        input[type=range]::-webkit-slider-thumb {
+            box-shadow: 1px 1px 1px #000000;
+            border: 1px solid #000000;
+            height: 30px;
+            width: 15px;
+            border-radius: 5px;
+            background: #FFFFFF;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="owl-carousel" style="display: flex; flex-direction: row;">
+            <img src="./img/heh.jpg" alt="">
+            <img src="./img/heh.jpg" alt="">
+            <img src="./img/header_photo.png" alt="">
+            <img src="./img/heh.jpg" alt="">
+        </div>
+
+        <div class="range">
+            <input type="range" min="0" max="100" step="2" value="20" oninput="CheckRange()" id="myRange">
+            <input type="text" id="myRangeInput" value="20" oninput="CheckRange()">
+        </div>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
+
+        <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel();
+            window.CheckRange = function() {
+                var rng = document.getElementById('myRange');
+                var myRangeInput = document.getElementById('myRangeInput');
+
+                myRangeInput.value = rng.value;
+                owl.trigger('next.owl.carousel');
+
+            }
+
+            $(document).ready(function() {
+                //$(".owl-carousel").owlCarousel();
+            });
+        </script>
+    </body>
+
+</html>

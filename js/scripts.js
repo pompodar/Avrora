@@ -80,7 +80,7 @@ owl.owlCarousel({
             items: 1,
             margin: 0,
         },
-        580: {
+        500: {
             items: 2
         },
         769: {
@@ -88,11 +88,27 @@ owl.owlCarousel({
         }
     }
 });
+
+let counter = 0;
+let rng1 = 0;
+let rng2 = 0;
+
 window.CheckRange = function() {
-    let rng = document.getElementById('myRange');
-    let myRangeInput = document.getElementById('myRangeInput');
+    if (counter % 2 === 0) {
+        rng1 = document.getElementById('myRange').value;
+        if (rng1 > rng2) {
+            owl.trigger('next.owl.carousel');
+        } else {
+            owl.trigger('prev.owl.carousel');
 
-    myRangeInput.value = rng.value;
-    owl.trigger('next.owl.carousel');
-
+        }
+    } else {
+        rng2 = document.getElementById('myRange').value;
+        if (rng1 > rng2) {
+            owl.trigger('prev.owl.carousel');
+        } else {
+            owl.trigger('next.owl.carousel');
+        }
+    }
+    counter++;
 }

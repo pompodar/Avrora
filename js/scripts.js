@@ -68,13 +68,25 @@
 })();
 
 // services slider
-
 let owl = $('.owl-carousel');
 owl.owlCarousel({
     items: 3,
     margin: 30,
     loop: true,
-    autoplay: true
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            margin: 0,
+        },
+        580: {
+            items: 2
+        },
+        769: {
+            items: 3
+        }
+    }
 });
 window.CheckRange = function() {
     let rng = document.getElementById('myRange');

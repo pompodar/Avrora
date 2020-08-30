@@ -121,7 +121,7 @@ window.CheckRange = function() {
 let span = $(".close");
 
 $(".owl-carousel div img").on('click', function() {
-    $("#myModal").css("display", "block");
+    $("#myModal").css("display", "flex");
     $(".modal_img").attr("src", $('#' + event.target.id).attr('src'));
 
 });
@@ -134,4 +134,14 @@ $("windows").on('click', function() {
     if (event.target == $("#myModal")) {
         $("#myModal").css("display", "none");
     }
+});
+
+// burger
+
+let burger = document.getElementById('burger'),
+    nav = document.getElementById('main-nav');
+
+burger.addEventListener('click', function(e) {
+    this.classList.toggle('is-open');
+    nav.classList.toggle('is-open');
 });

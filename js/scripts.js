@@ -68,6 +68,7 @@
 })();
 
 // services slider
+
 let owl = $('.owl-carousel');
 owl.owlCarousel({
     items: 3,
@@ -88,6 +89,8 @@ owl.owlCarousel({
         }
     }
 });
+
+// input range
 
 let counter = 0;
 let rng1 = 0;
@@ -112,3 +115,23 @@ window.CheckRange = function() {
     }
     counter++;
 }
+
+// modal window
+
+let span = $(".close");
+
+$(".owl-carousel div img").on('click', function() {
+    $("#myModal").css("display", "block");
+    $(".modal_img").attr("src", $('#' + event.target.id).attr('src'));
+
+});
+
+$(".close").on('click', function() {
+    $("#myModal").css("display", "none");
+});
+
+$("windows").on('click', function() {
+    if (event.target == $("#myModal")) {
+        $("#myModal").css("display", "none");
+    }
+});

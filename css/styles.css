@@ -327,6 +327,7 @@ a {
 
 .owl-carousel div img {
     height: 30rem;
+    cursor: pointer;
 }
 
 .services__slider__description {
@@ -392,6 +393,11 @@ a {
     font-size: 1rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+
+.services__slider__price__button:hover {
+    color: #000000;
+    border: 0.1rem solid #000000;
 }
 
 #myRange {
@@ -546,7 +552,18 @@ input[type=range]::-webkit-slider-thumb {
     border-bottom: .2rem solid aqua;
 }
 
+.about__details span:hover {
+    border-bottom: .2rem solid transparent;
+}
+
 .contacts {
+    background: #ffffff;
+    padding-top: 5rem;
+    width: 100vw;
+}
+
+.contacts__inner {
+    width: 100vw;
     background-image: url("../img/contacts_background.png");
     text-align: center;
 }
@@ -572,15 +589,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .contacts__info {
-    position: absolute;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 3rem 5rem 10rem 5rem;
-    z-index: 2;
     background: transparent;
-    ;
 }
 
 .bottom__info {
@@ -589,12 +603,11 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 120%;
-    /* or 18px */
     display: flex;
     flex-direction: column;
     color: #2B3139;
     background: #ffffff;
-    padding: 4.3rem;
+    padding: 4.2rem;
     padding-top: 3.4rem;
     padding-bottom: 2rem;
 }
@@ -603,7 +616,7 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: 600;
 }
 
-.logo {
+.logo.bottom {
     /* Auto Layout */
     display: flex;
     flex-direction: row;
@@ -612,7 +625,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: 0.05rem;
 }
 
-.logo p {
+.logo.bottom p {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: bold;
@@ -630,31 +643,115 @@ input[type=range]::-webkit-slider-thumb {
     width: 0;
     height: 0;
     border-top: 5.3rem solid #ffffff;
-    border-left: 7rem solid #F5C723;
+    border-left: 2rem solid #F5C723;
     border-bottom: 5.3rem solid #FFFFFF;
 }
 
-.call_button button {
+footer {
+    background: linear-gradient(110.8deg, #3C7EE0 36.23%, #1359C2 93.86%);
+    display: flex;
+    justify-content: space-around;
     font-family: Source Sans Pro;
     font-style: normal;
-    background: #30C17B;
-    color: #FFFFFF;
-    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 1.5rem;
     line-height: 120%;
-    font-size: 1rem;
+    color: #FFFFFF;
+    padding: 3rem;
+    width: 100vw;
 }
 
-.call_button button img {
-    padding-right: 1rem;
+.footer_company_name,
+.site_developer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.social_media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social_media a {
+    background: #396DBA;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.social_media a:hover {
+    background: #ffffff;
+}
+
+.social_media a:hover>i {
+    color: #396DBA;
+}
+
+.social_media a:nth-of-type(1) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.site_developer p {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.site_developer p:hover {
+    color: #396DBA;
+}
+
+
+/* modal window */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: .5rem;
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: auto;
+    padding: .2rem;
+    width: 60%;
+    position: relative;
+}
+
+.close {
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: 1rem;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_img {
+    width: 100%;
+}
+
+
+/* media queries */
 
 @media screen and (max-width: 1120px) {
     html {

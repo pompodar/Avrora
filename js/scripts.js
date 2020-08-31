@@ -1,5 +1,4 @@
 // header slider
-
 (function() {
 
     function Slideshow(element) {
@@ -66,82 +65,92 @@
 
 
 })();
-
 // services slider
-
-let owl = $('.owl-carousel');
-owl.owlCarousel({
-    items: 3,
-    margin: 30,
-    loop: true,
-    autoplay: true,
-    responsiveClass: true,
-    responsive: {
-        0: {
-            items: 1,
-            margin: 0,
-        },
-        500: {
-            items: 2
-        },
-        769: {
-            items: 3
+jQuery(function() {
+    let owl = jQuery('.owl-carousel');
+    owl.owlCarousel({
+        items: 3,
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 0,
+            },
+            500: {
+                items: 2
+            },
+            769: {
+                items: 3
+            }
         }
-    }
-});
+    });
 
-// input range
 
-let counter = 0;
-let rng1 = 0;
-let rng2 = 0;
+    // input range
 
-window.CheckRange = function() {
-    if (counter % 2 === 0) {
-        rng1 = document.getElementById('myRange').value;
-        if (rng1 > rng2) {
-            owl.trigger('next.owl.carousel');
+    let counter = 0;
+    let rng1 = 0;
+    let rng2 = 0;
+
+    window.CheckRange = function() {
+        if (counter % 2 === 0) {
+            rng1 = document.getElementById('myRange').value;
+            if (rng1 > rng2) {
+                owl.trigger('next.owl.carousel');
+            } else {
+                owl.trigger('prev.owl.carousel');
+
+            }
         } else {
-            owl.trigger('prev.owl.carousel');
-
+            rng2 = document.getElementById('myRange').value;
+            if (rng1 > rng2) {
+                owl.trigger('prev.owl.carousel');
+            } else {
+                owl.trigger('next.owl.carousel');
+            }
         }
-    } else {
-        rng2 = document.getElementById('myRange').value;
-        if (rng1 > rng2) {
-            owl.trigger('prev.owl.carousel');
-        } else {
-            owl.trigger('next.owl.carousel');
+        counter++;
+    }
+
+    // modal window
+    // if windows > 500
+
+    let span = jQuery(".close");
+
+    jQuery(".owl-carousel div img").on('click', function() {
+        jQuery("#myModal").css("display", "flex");
+        jQuery(".modal_img").attr("src", jQuery('#' + event.target.id).attr('src'));
+
+    });
+
+    jQuery(".close").on('click', function() {
+        jQuery("#myModal").css("display", "none");
+    });
+
+    jQuery("windows").on('click', function() {
+        if (event.target == jQuery("#myModal")) {
+            jQuery("#myModal").css("display", "none");
         }
-    }
-    counter++;
-}
+    });
 
-// modal window
+    // burger
 
-let span = $(".close");
+    let burger = document.getElementById('burger'),
+        nav = document.getElementById('main-nav');
 
-$(".owl-carousel div img").on('click', function() {
-    $("#myModal").css("display", "flex");
-    $(".modal_img").attr("src", $('#' + event.target.id).attr('src'));
 
-});
 
-$(".close").on('click', function() {
-    $("#myModal").css("display", "none");
-});
+    burger.addEventListener('click', function(e) {
+        this.classList.toggle('is-open');
+        nav.classList.toggle('is-open');
+    });
 
-$("windows").on('click', function() {
-    if (event.target == $("#myModal")) {
-        $("#myModal").css("display", "none");
-    }
-});
+    // sticky header
 
-// burger
-
-let burger = document.getElementById('burger'),
-    nav = document.getElementById('main-nav');
-
-burger.addEventListener('click', function(e) {
-    this.classList.toggle('is-open');
-    nav.classList.toggle('is-open');
+    jQuery(window).on("scroll", function() {
+        jQuery(".sticky_header").css("display", "flex");
+    })
 });

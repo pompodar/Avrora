@@ -6,19 +6,70 @@
     <meta charset="utf-8">
 
     <title>Avrora</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="Svjatoslav Kachmar" content="SitePoint">
+    <meta name="description" content="ООО «Аврора»
+                            Полный спектр
+                            современных материалов
+                            для бетонирования полов">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="./libs/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./libs/owl-carousel/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <?php 
+			   wp_head();
+		?>
 </head>
 
 <body>
     <header>
+        <div class="sticky_header">
+            <div class="header__top__info logo mobile">
+                <p>
+                    <a href="">
+                        ООО «Аврора»
+                    </a>
+                </p>
+            </div>
+            <menu class="menu_mobile">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
+                            <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
+                            <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> О нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
+                            <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> Каталог
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
+                            <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> Контакты
+                        </a>
+                    </li>
+                </ul>
+            </menu>
+            <div class="header__top__info phone mobile">
+                <a href="">
+                    +7 (929) 397-02-92
+                </a>
+            </div>
+            <div class="header__top__info call_button">
+                <a href="">
+                    <button>
+                    <img src="./wp-content/themes/Avrora/img/phone_icon.png">
+                    Позвонить
+                </button></a>
+            </div>
+        </div>
         <div class="header__vertical_line"></div>
         <div>
             <div class="header__top">
@@ -53,10 +104,9 @@
                 <div class="header__top__info call_button">
                     <a href="">
                         <button>
-                        <img src="./img/phone_icon.png">
+                        <img src="./wp-content/themes/Avrora/img/phone_icon.png">
                         Позвонить
                     </button></a>
-
                 </div>
             </div>
 
@@ -75,7 +125,7 @@
                         <div class="header__top__info call_button">
                             <a href="">
                                 <button>
-                            <img src="./img/phone_icon.png">
+                            <img src="./wp-content/themes/Avrora/img/phone_icon.png">
                             Позвонить
                         </button></a>
                         </div>
@@ -135,8 +185,7 @@
                         <!-- outermost container element -->
                         <div class="slider-wrapper">
                             <!-- innermost wrapper element -->
-                            <img src="./img/header_photo.png" class="slide">
-                            <img src="http://lorempixel.com/1024/400/city" alt="Third" class="slide" />
+                            <img src="./wp-content/themes/Avrora/img/header_photo.png" class="slide">
                         </div>
                     </div>
 
@@ -155,26 +204,26 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <img src="./img/line.png" alt="" class="line">
-                                        <img src="./img/arrow.png" alt="" class="arrow"> Главная
+                                        <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
+                                        <img src="./wp-content/themes/Avrora/img/arrow.png" alt="" class="arrow"> Главная
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="./img/line.png" alt="" class="line">
-                                        <img src="./img/arrow.png" alt="" class="arrow"> О нас
+                                        <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
+                                        <img src="./wp-content/themes/Avrora/img/arrow.png" alt="" class="arrow"> О нас
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="./img/line.png" alt="" class="line">
-                                        <img src="./img/arrow.png" alt="" class="arrow"> Каталог
+                                        <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
+                                        <img src="./wp-content/themes/Avrora/img/arrow.png" alt="" class="arrow"> Каталог
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <img src="./img/line.png" alt="" class="line">
-                                        <img src="./img/arrow.png" alt="" class="arrow"> Контакты
+                                        <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
+                                        <img src="./wp-content/themes/Avrora/img/arrow.png" alt="" class="arrow"> Контакты
                                     </a>
                                 </li>
                             </ul>
@@ -188,7 +237,7 @@
                     <div class="header__bottom__advantages">
                         <div class="header__bottom__advantages__piece">
                             <div class="header__bottom__advantages__piece__img">
-                                <img src="./img/quality.png" alt="">
+                                <img src="./wp-content/themes/Avrora/img/quality.png" alt="">
                             </div>
                             <div class="header__bottom__advantages__piece__text">
                                 <p>
@@ -202,7 +251,7 @@
                         </div>
                         <div class="header__bottom__advantages__piece">
                             <div class="header__bottom__advantages__piece__img">
-                                <img src="./img/quality.png" alt="">
+                                <img src="./wp-content/themes/Avrora/img/quality.png" alt="">
                             </div>
                             <div class="header__bottom__advantages__piece__text">
                                 <p>
@@ -214,7 +263,7 @@
                         </div>
                         <div class="header__bottom__advantages__piece">
                             <div class="header__bottom__advantages__piece__img">
-                                <img src="./img/quality.png" alt="">
+                                <img src="./wp-content/themes/Avrora/img/quality.png" alt="">
                             </div>
                             <div class="header__bottom__advantages__piece__text">
                                 <p>
@@ -226,7 +275,7 @@
                         </div>
                         <div class="header__bottom__advantages__piece">
                             <div class="header__bottom__advantages__piece__img">
-                                <img src="./img/quality.png" alt="">
+                                <img src="./wp-content/themes/Avrora/img/quality.png" alt="">
                             </div>
                             <div class="header__bottom__advantages__piece__text">
                                 <p>
@@ -256,60 +305,60 @@
                     <button class="services__description__button">
                         <span>                        Смотреть все услуги
                         </span>
-                            <img src="./img/white_arrow.png" alt="" class="white_arrow">
+                            <img src="./wp-content/themes/Avrora/img/white_arrow.png" alt="" class="white_arrow">
                     </button>
                 </a>
             </div>
             <div class="services__slider">
                 <div class="owl-carousel">
                     <div class="owl-carousel__item">
-                        <img id="owl-carousel__item__img0" src="./img/flat_3d_floors.png" alt="">
+                        <img id="owl-carousel__item__img0" src="./wp-content/themes/Avrora/img/flat_3d_floors.png" alt="">
                         <div class="services__slider__price">
                             <a href="
                             ">
                                 <h3 class="services__slider__description">3D пол для квартиры</h3>
                             </a>
                             <div class="services__slider__additional_pics">
-                                <img src="./img/flat_3d_floors_preview1.png" alt="3D пол для квартиры">
-                                <img src="./img/flat_3d_floors_preview2.png" alt="3D пол для квартиры">
-                                <img src="./img/flat_3d_floors_preview4.png" alt="3D пол для квартиры">
-                                <img src="./img/flat_3d_floors_preview4.png" alt="3D пол для квартиры">
+                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview1.png" alt="3D пол для квартиры">
+                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview2.png" alt="3D пол для квартиры">
+                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview4.png" alt="3D пол для квартиры">
+                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview4.png" alt="3D пол для квартиры">
                             </div>
                             <p>от 3 500 руб.</p>
                             <div class="services__slider__price__button_container">
                                 <button class="services__slider__price__button">
                                     <a href="">                                    Задать вопрос
                                     </a>
-                                    <img src="./img/orange_arrow.png" alt="" class="orange_arrow">
+                                    <img src="./wp-content/themes/Avrora/img/orange_arrow.png" alt="" class="orange_arrow">
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="owl-carousel__item">
-                        <img id="owl-carousel__item__img1" src="./img/bathroom_fiil_in_floor.png" alt=" ">
+                        <img id="owl-carousel__item__img1" src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor.png" alt=" ">
                         <div class="services__slider__price">
                             <a href="
                             ">
                                 <h3 class="services__slider__description">Наливной пол в ванную</h3>
                             </a>
                             <div class="services__slider__additional_pics">
-                                <img src="./img/bathroom_fiil_in_floor_preview1.png" alt="Наливной пол в ванную">
-                                <img src="./img/bathroom_fiil_in_floor_preview2.png" alt="Наливной пол в ванную">
-                                <img src="./img/bathroom_fiil_in_floor_preview3.png" alt="Наливной пол в ванную">
-                                <img src="./img/bathroom_fiil_in_floor_preview4.png" alt="Наливной пол в ванную">
+                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview1.png" alt="Наливной пол в ванную">
+                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview2.png" alt="Наливной пол в ванную">
+                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview3.png" alt="Наливной пол в ванную">
+                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview4.png" alt="Наливной пол в ванную">
                             </div>
                             <p>от 2 500 руб.</p>
                             <div class="services__slider__price__button_container">
                                 <button class="services__slider__price__button">
                                     <a href="">                                    Задать вопрос
                                     </a>
-                                    <img src="./img/orange_arrow.png" alt="" class="orange_arrow">
+                                    <img src="./wp-content/themes/Avrora/img/orange_arrow.png" alt="" class="orange_arrow">
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="owl-carousel__item">
-                        <img id="owl-carousel__item__img2" src="./img/industrial_floors.png" alt="Бетонирование пола на производстве">
+                        <img id="owl-carousel__item__img2" src="./wp-content/themes/Avrora/img/industrial_floors.png" alt="Бетонирование пола на производстве">
                         <div id="services__slider__price3" class="services__slider__price">
                             <a href="
                             ">
@@ -317,17 +366,17 @@
                                     <span>на производстве</span></h3>
                             </a>
                             <div class="services__slider__additional_pics">
-                                <img src="./img/industrial_floors_preview1.png" alt="Бетонирование пола на производстве">
-                                <img src="./img/industrial_floors_preview2.png" alt="Бетонирование пола на производстве">
-                                <img src="./img/industrial_floors_preview3.png" alt="Бетонирование пола на производстве">
-                                <img src="./img/industrial_floors_preview4.png" alt="Бетонирование пола на производстве">
+                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview1.png" alt="Бетонирование пола на производстве">
+                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview2.png" alt="Бетонирование пола на производстве">
+                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview3.png" alt="Бетонирование пола на производстве">
+                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview4.png" alt="Бетонирование пола на производстве">
                             </div>
                             <p>договорная цена</p>
                             <div class="services__slider__price__button_container">
                                 <button class="services__slider__price__button">
                                     <a href="">                                    Задать вопрос
                                     </a>
-                                    <img src="./img/orange_arrow.png" alt="" class="orange_arrow">
+                                    <img src="./wp-content/themes/Avrora/img/orange_arrow.png" alt="" class="orange_arrow">
                                 </button>
                             </div>
                         </div>
@@ -352,7 +401,7 @@
                     <p>Это позволяет экономить Ваше время и средства, добиваясь при этом хороших результатов. Все услуги по строительству, монтажу и ремонту сдаются в срок и с получением требуемого результата.</p>
                 </div>
                 <div class="about__photo_and_text__photo">
-                    <img src="./img/beautiful_woman_builder.png" alt="">
+                    <img src="./wp-content/themes/Avrora/img/beautiful_woman_builder.png" alt="">
                 </div>
             </div>
             <div class="about__details">
@@ -399,7 +448,7 @@
                     <a href="">
                         <div class="bottom__info call_button">
                             <button>
-                            <img src="./img/phone_icon.png">
+                            <img src="./wp-content/themes/Avrora/img/phone_icon.png">
                             Позвонить
                         </button>
                     </a>
@@ -408,6 +457,17 @@
             </div>
         </section>
     </main>
+    <footer class="footer__mobile">
+        <div class="footer_company_name mobile">
+            <p>ООО «Аврора» 2014 - 2020</p>
+        </div>
+        <div class="site_developer mobile">
+            <p>Разработка сайта</p>
+            <a target="_blank" href="https://alianscompany.ru/">
+                <img src="./wp-content/themes/Avrora/img//developer_logo.png" alt="">
+            </a>
+        </div>
+    </footer class="footer__mobile">
     <footer>
         <div class="footer_company_name">
             <p>ООО «Аврора» 2014 - 2020</p>
@@ -429,19 +489,19 @@
         <div class="site_developer">
             <p>Разработка сайта</p>
             <a target="_blank" href="https://alianscompany.ru/">
-                <img src="./img//developer_logo.png" alt="">
+                <img src="./wp-content/themes/Avrora/img//developer_logo.png" alt="">
             </a>
         </div>
     </footer>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img class="modal_img" src="./img/flat_3d_floors.png" alt="">
+            <img class="modal_img" src="./wp-content/themes/Avrora/img/flat_3d_floors.png" alt="">
         </div>
     </div>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-    <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="./js/scripts.js"></script>
+    <?php
+	    wp_footer();
+	?>
 </body>
 
 </html>

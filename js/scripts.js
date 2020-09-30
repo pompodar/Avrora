@@ -59,12 +59,13 @@
 
     document.addEventListener("DOMContentLoaded", function() {
 
-        var slider = new Slideshow("#main-slider");
+        let slider = new Slideshow("#main-slider");
 
     });
 
 
 })();
+
 // services slider
 jQuery(function() {
     let owl = jQuery('.owl-carousel');
@@ -116,41 +117,86 @@ jQuery(function() {
     }
 
     // modal window
-    // if windows > 500
 
-    let span = jQuery(".close");
+    if (jQuery(window).width() > 830) {
 
-    jQuery(".owl-carousel div img").on('click', function() {
-        jQuery("#myModal").css("display", "flex");
-        jQuery(".modal_img").attr("src", jQuery('#' + event.target.id).attr('src'));
+        let span = jQuery(".close");
 
-    });
+        jQuery(".owl-carousel div img, .services__slider__additional_pics img").on('click', function() {
+            jQuery("#myModal").css("display", "flex");
+            jQuery(".modal_img").attr("src", jQuery('#' + event.target.id).attr('src'));
 
-    jQuery(".close").on('click', function() {
-        jQuery("#myModal").css("display", "none");
-    });
+        });
 
-    jQuery("windows").on('click', function() {
-        if (event.target == jQuery("#myModal")) {
+        jQuery(".close").on('click', function() {
             jQuery("#myModal").css("display", "none");
-        }
-    });
+        });
 
-    // burger
-
-    let burger = document.getElementById('burger'),
-        nav = document.getElementById('main-nav');
-
-
-
-    burger.addEventListener('click', function(e) {
-        this.classList.toggle('is-open');
-        nav.classList.toggle('is-open');
-    });
+        jQuery("windows").on('click', function() {
+            if (event.target == jQuery("#myModal")) {
+                jQuery("#myModal").css("display", "none");
+            }
+        });
+    }
 
     // sticky header
 
-    jQuery(window).on("scroll", function() {
-        jQuery(".sticky_header").css("display", "flex");
-    })
+    if (jQuery(window).width() > 800) {
+
+        window.onscroll = function() { myFunction() };
+        let header = jQuery(".sticky_header");
+        let sticky = header.offset().top;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.addClass("sticky");
+            } else {
+                header.removeClass("sticky");
+            }
+        }
+    }
+
+
+    // on top when refresh
+    let toTop = true;
+
+    jQuery(".services__slider__description").parent().on("click", function() {
+        toTop = false;
+    });
+
+    jQuery("menu ul li a").on("click", function() {
+        toTop = false;
+    });
+
+    jQuery(".services__description__button").on("click", function() {
+        toTop = false;
+    });
+
+    jQuery(".about__details a").on("click", function() {
+        toTop = false;
+    });
+
+    jQuery(window).on('beforeunload', function() {
+        if (toTop === true) {
+            jQuery(window).scrollTop(0);
+        }
+    });
+
+    // contact form
+
+    jQuery(".services__slider__price__button").on("click", function() {
+        jQuery("#myModal_services").css("display", "none");
+        jQuery("#contact_form").css("display", "flex");
+    });
+
+    jQuery(".close.contact").on('click', function() {
+        jQuery("#contact_form").css("display", "none");
+    });
+
+    jQuery("windows").on('click', function() {
+        if (event.target == jQuery("#contact_form")) {
+            jQuery("#contact_form").css("display", "none");
+        }
+    });
+
 });

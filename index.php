@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Avrora</title>
+    <title>Аврора</title>
     <meta name="description" content="ООО «Аврора»
                             Полный спектр
                             современных материалов
@@ -20,11 +20,18 @@
 </head>
 
 <body>
+    <!--
+    <div class="header__vertical_line first"></div>
+    <div class="header__vertical_line second"></div>
+    <div class="header__vertical_line third"></div>
+    <div class="header__vertical_line forth"></div>
+    <div class="header__vertical_line fifth"></div>
+    -->
     <header>
         <div class="sticky_header">
             <div class="header__top__info logo mobile">
                 <p>
-                    <a href="">
+                    <a href=<?php echo get_home_url(); ?>>
                         ООО «Аврора»
                     </a>
                 </p>
@@ -32,50 +39,48 @@
             <menu class="menu_mobile">
                 <ul>
                     <li>
-                        <a href="#">
+                    <a href=<?php echo get_home_url(); ?>>
                             <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
                             <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> Главная
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                    <a href=<?php echo get_home_url() . "/o-nas"; ?>>
                             <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
                             <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> О нас
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                    <a href=<?php echo get_home_url() . "/uslugi"; ?>>
                             <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
                             <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> Каталог
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
+                    <a href=<?php echo get_home_url() . "/kontakty"; ?>>                            <img src="./wp-content/themes/Avrora/img/black_line.png" alt="" class="line">
                             <img src="./wp-content/themes/Avrora/img/black_arrow.png" alt="" class="arrow"> Контакты
                         </a>
                     </li>
                 </ul>
             </menu>
             <div class="header__top__info phone mobile">
-                <a href="">
-                    +7 (929) 397-02-92
+            <a href="tel:+79969627330">
+                    +7 (996) 962-73-30
                 </a>
             </div>
             <div class="header__top__info call_button">
-                <a href="">
+            <a href="tel:+79969627330">
                     <button>
                     <img src="./wp-content/themes/Avrora/img/phone_icon.png">
                     Позвонить
                 </button></a>
             </div>
         </div>
-        <div class="header__vertical_line"></div>
         <div>
             <div class="header__top">
                 <div class="header__top__info logo">
                     <p>
-                        <a href="">
+                    <a href=<?php echo get_home_url(); ?>>
                             ООО «Аврора»
                         </a>
                     </p>
@@ -84,7 +89,7 @@
                     <p>
                         E-mail
                     </p>
-                    <a href="">
+                    <a href="mailto:sergeia333o@mail.ru">
                         sergeia333o@mail.ru
                     </a>
                 </div>
@@ -93,16 +98,16 @@
                         График работы
                     </p>
                     <p>
-                        пн-пт 10:00-20:00
+                    <?php the_field('schedule')?>
                     </p>
                 </div>
                 <div class="header__top__info phone">
-                    <a href="">
-                        +7 (929) 397-02-92
+                    <a href="tel:+79969627330">
+                        +7 (996) 962-73-30
                     </a>
                 </div>
                 <div class="header__top__info call_button">
-                    <a href="">
+                    <a href="tel:+79969627330">
                         <button>
                         <img src="./wp-content/themes/Avrora/img/phone_icon.png">
                         Позвонить
@@ -117,13 +122,13 @@
                     <div class="header__top__mobile__top">
                         <div class="header__top__info logo">
                             <p>
-                                <a href="">
+                            <a href=<?php echo get_home_url(); ?>>
                                 ООО «Аврора»
                             </a>
                             </p>
                         </div>
                         <div class="header__top__info call_button">
-                            <a href="">
+                        <a href="tel:+79969627330">
                                 <button>
                             <img src="./wp-content/themes/Avrora/img/phone_icon.png">
                             Позвонить
@@ -136,16 +141,19 @@
                             <nav class="main-nav" id="main-nav">
                                 <ul>
                                     <li>
-                                        <a href="google.com">Главная</a>
+                                    <a href=<?php echo get_home_url(); ?>>
+                                            Главная</a>
                                     </li>
                                     <li>
-                                        <a href="#">О нас</a>
+                                    <a href=<?php echo get_home_url() . "/o-nas"; ?>>
+О нас</a>
                                     </li>
                                     <li>
-                                        <a href="#">Каталог</a>
+                                    <a href=<?php echo get_home_url() . "/uslugi"; ?>>
+                                            Каталог</a>
                                     </li>
                                     <li>
-                                        <a href="#">Контакты</a>
+                                    <a href=<?php echo get_home_url() . "/kontakty"; ?>>Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -157,7 +165,7 @@
                                 <p>
                                     E-mail
                                 </p>
-                                <a href="">
+                                <a href="mailto:sergeia333o@mail.ru">
                             sergeia333o@mail.ru
                         </a>
                             </div>
@@ -166,14 +174,14 @@
                                     График работы
                                 </p>
                                 <p>
-                                    пн-пт 10:00-20:00
+                                <?php the_field('schedule')?>
                                 </p>
                             </div>
                         </div>
                         <div class="header__top__mobile__bottom_right">
                             <div class="header__top__info phone__mobile">
-                                <a href="">
-                            +7 (929) 397-02-92
+                                <a href="tel:+79969627330">
+                            +7 (996) 962-73-30
                         </a>
                             </div>
                         </div>
@@ -182,22 +190,32 @@
 
                 <div class="header__bottom">
                     <div class="slider" id="main-slider">
-                        <!-- outermost container element -->
-                        <div class="slider-wrapper">
-                            <!-- innermost wrapper element -->
-                            <img src="./wp-content/themes/Avrora/img/header_photo.png" class="slide">
-                        </div>
+                        <?php
+                            $new_query = new WP_Query( array('posts_per_page' => -1, 'category_name' => 'header_slider', 'orderby' => 'date', 'order' => 'ASC')); 
+                        ?>
+                        <?php 
+                            if ( $new_query->have_posts() ) : 
+                        ?> 
+                                <?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
+                                    <div class="slider-wrapper">
+                                        <?php the_post_thumbnail( 'full', array( 'class' => 'slide' ) ); ?>
+                                    </div>
+                                <?php
+                                    endwhile; 
+                                ?>
+                                <?php wp_reset_postdata(); ?>
+                            <?php else : ?>
+                                <!-- No posts found -->
+                            <?php endif;
+                            ?>                      
                     </div>
-
                     <div class="header__slogan">
                         <h1>
-                            ООО «Аврора»
-                            <br> Полный спектр
-                            <br> современных материалов
-                            <br>для бетонирования полов
+                        <?php the_field('header_slogan')?>
                         </h1>
                         <button>
-                        <a href="">                    Узнать подробнее
+                        <a href=<?php echo get_home_url() . "/uslugi"; ?>>
+                    Узнать подробнее
                         </a>
                 </button>
                         <menu>
@@ -209,20 +227,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                <a href=<?php echo get_home_url() . "/o-nas"; ?>>
                                         <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
                                         <img src="./wp-content/themes/Avrora/img/arrow.png" alt="" class="arrow"> О нас
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                <a href=<?php echo get_home_url() . "/uslugi"; ?>>
                                         <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
                                         <img src="./wp-content/themes/Avrora/img/arrow.png" alt="" class="arrow"> Каталог
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
+                                <a href=<?php echo get_home_url() . "/kontakty"; ?>>                                        <img src="./wp-content/themes/Avrora/img/line.png" alt="" class="line">
                                         <img src="./wp-content/themes/Avrora/img/arrow.png" alt="" class="arrow"> Контакты
                                     </a>
                                 </li>
@@ -301,7 +318,7 @@
                 <h2 class="services__description__text">
                     Современные высокопрочные промышленные бетонные полы сочетают в себе высокую функциональность и эстетическую привлекательность. Такие полы служат долго и не требуют ремонта.
                 </h2>
-                <a href="">
+                <a href=<?php echo get_home_url() . "/uslugi"; ?>>
                     <button class="services__description__button">
                         <span>                        Смотреть все услуги
                         </span>
@@ -310,79 +327,61 @@
                 </a>
             </div>
             <div class="services__slider">
-                <div class="owl-carousel">
-                    <div class="owl-carousel__item">
-                        <img id="owl-carousel__item__img0" src="./wp-content/themes/Avrora/img/flat_3d_floors.png" alt="">
-                        <div class="services__slider__price">
-                            <a href="
-                            ">
-                                <h3 class="services__slider__description">3D пол для квартиры</h3>
+                <?php
+                    $new_query = new WP_Query( array('posts_per_page' => -1, 'category_name' => 'services', 'orderby' => 'date', 'order' => 'ASC')); 
+                ?>
+                <?php 
+                    $id = 0;
+                    if ( $new_query->have_posts() ) : 
+                ?> 
+                    <div class="owl-carousel">
+                        <?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
+                        <div class="owl-carousel__item">
+                            <img id=<?php echo $id . "owl-carousel__item__img"; ?> src="<?php the_field("main_image");?>" alt="<?php the_title();?>">
+                            <?php
+                                if (get_field("two_rows_title")) :
+                            ?>
+                                <div class="services__slider__price two_rows_title">    
+                            <?php
+                                else :
+                            ?>
+                                <div class="services__slider__price">
+                            <?php
+                                endif;
+                            ?>
+                            <a href="<?php echo get_permalink(); ?>">
+                                <h3 class="services__slider__description"><span><?php the_field("service_name");?></span></h3>
                             </a>
                             <div class="services__slider__additional_pics">
-                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview1.png" alt="3D пол для квартиры">
-                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview2.png" alt="3D пол для квартиры">
-                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview4.png" alt="3D пол для квартиры">
-                                <img src="./wp-content/themes/Avrora/img/flat_3d_floors_preview4.png" alt="3D пол для квартиры">
+                                <img id=<?php echo $id . "additional_image1"; ?> src="<?php the_field("additional_image1");?>" alt="<?php the_title();?>">
+                                <img id=<?php echo $id . "additional_image2"; ?> src="<?php the_field("additional_image2");?>" alt="<?php the_title();?>">
+                                <img id=<?php echo $id . "additional_image3"; ?> src="<?php the_field("additional_image3");?>" alt="<?php the_title();?>">
+                                <img id=<?php echo $id . "additional_image4"; ?> src="<?php the_field("additional_image4");?>" alt="<?php the_title();?>">
                             </div>
-                            <p>от 3 500 руб.</p>
+                            <?php                                 
+                                $id++;
+                            ?>
+                            <p><?php the_field("price");?></p>
                             <div class="services__slider__price__button_container">
                                 <button class="services__slider__price__button">
-                                    <a href="">                                    Задать вопрос
+                                    <a>                                    Задать вопрос
                                     </a>
                                     <img src="./wp-content/themes/Avrora/img/orange_arrow.png" alt="" class="orange_arrow">
+                                    <img src="./wp-content/themes/Avrora/img/green_arrow.png" alt="" class="green_arrow">
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="owl-carousel__item">
-                        <img id="owl-carousel__item__img1" src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor.png" alt=" ">
-                        <div class="services__slider__price">
-                            <a href="
-                            ">
-                                <h3 class="services__slider__description">Наливной пол в ванную</h3>
-                            </a>
-                            <div class="services__slider__additional_pics">
-                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview1.png" alt="Наливной пол в ванную">
-                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview2.png" alt="Наливной пол в ванную">
-                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview3.png" alt="Наливной пол в ванную">
-                                <img src="./wp-content/themes/Avrora/img/bathroom_fiil_in_floor_preview4.png" alt="Наливной пол в ванную">
-                            </div>
-                            <p>от 2 500 руб.</p>
-                            <div class="services__slider__price__button_container">
-                                <button class="services__slider__price__button">
-                                    <a href="">                                    Задать вопрос
-                                    </a>
-                                    <img src="./wp-content/themes/Avrora/img/orange_arrow.png" alt="" class="orange_arrow">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-carousel__item">
-                        <img id="owl-carousel__item__img2" src="./wp-content/themes/Avrora/img/industrial_floors.png" alt="Бетонирование пола на производстве">
-                        <div id="services__slider__price3" class="services__slider__price">
-                            <a href="
-                            ">
-                                <h3 id="industrial_floors_description" class="services__slider__description"><span>Бетонирование пола</span>
-                                    <span>на производстве</span></h3>
-                            </a>
-                            <div class="services__slider__additional_pics">
-                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview1.png" alt="Бетонирование пола на производстве">
-                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview2.png" alt="Бетонирование пола на производстве">
-                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview3.png" alt="Бетонирование пола на производстве">
-                                <img src="./wp-content/themes/Avrora/img/industrial_floors_preview4.png" alt="Бетонирование пола на производстве">
-                            </div>
-                            <p>договорная цена</p>
-                            <div class="services__slider__price__button_container">
-                                <button class="services__slider__price__button">
-                                    <a href="">                                    Задать вопрос
-                                    </a>
-                                    <img src="./wp-content/themes/Avrora/img/orange_arrow.png" alt="" class="orange_arrow">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <?php
+                endwhile; 
+            ?>
+            </div>
+            <?php wp_reset_postdata(); ?>
+        </div>
+    <?php else : ?>
+         <!-- No posts found -->
+    <?php endif;
+    ?>            
                 <div class="services__slider__range">
                     <input type="range" min="1" max="100" step="2" value="1" oninput="CheckRange()" id="myRange">
                 </div>
@@ -397,7 +396,7 @@
                 <div class="about__photo_and_text__text">
                     <p>Информация</p>
                     <p>О нашей компании</p>
-                    <p>ООО «АВРОРА» основана в 2015 году, на сегодняшний день являемся активно развивающимся предприятием. Наша строительная компания применяет в строительстве самые современные технологии и использует современные материалы. </p>
+                    <p>ООО «АВРОРА» основана в 2016 году, на сегодняшний день являемся активно развивающимся предприятием. Наша строительная компания применяет в строительстве самые современные технологии и использует современные материалы. </p>
                     <p>Это позволяет экономить Ваше время и средства, добиваясь при этом хороших результатов. Все услуги по строительству, монтажу и ремонту сдаются в срок и с получением требуемого результата.</p>
                 </div>
                 <div class="about__photo_and_text__photo">
@@ -405,7 +404,8 @@
                 </div>
             </div>
             <div class="about__details">
-                <a href=""><span>Подробнее о компании</span></a>
+            <a href=<?php echo get_home_url() . "/о-нас"; ?>>
+<span>Подробнее о компании</span></a>
             </div>
         </section>
         <section class="contacts">
@@ -415,7 +415,7 @@
                 <div class="contacts__info">
                     <div class="bottom__info logo bottom">
                         <p>
-                            <a href="">
+                        <a href=<?php echo get_home_url(); ?>>
                             ООО «Аврора»
                         </a>
                         </p>
@@ -425,7 +425,7 @@
                         <p>
                             E-mail
                         </p>
-                        <a href="">
+                        <a href="mailto:sergeia333o@mail.ru">
                             sergeia333o@mail.ru
                         </a>
                     </div>
@@ -434,18 +434,18 @@
                             График работы
                         </p>
                         <p>
-                            пн-пт 10:00-20:00
+                        <?php the_field('schedule')?>
                         </p>
                     </div>
                     <div class="bottom__info phone">
                         <p>
                             Телефон
                         </p>
-                        <a href="">
-                            +7 (929) 397-02-92
+                        <a href="tel:+79969627330">
+                            +7 (996) 962-73-30
                         </a>
                     </div>
-                    <a href="">
+                    <a href="tel:+79969627330">
                         <div class="bottom__info call_button">
                             <button>
                             <img src="./wp-content/themes/Avrora/img/phone_icon.png">
@@ -456,52 +456,20 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer__mobile">
-        <div class="footer_company_name mobile">
-            <p>ООО «Аврора» 2014 - 2020</p>
-        </div>
-        <div class="site_developer mobile">
-            <p>Разработка сайта</p>
-            <a target="_blank" href="https://alianscompany.ru/">
-                <img src="./wp-content/themes/Avrora/img//developer_logo.png" alt="">
-            </a>
-        </div>
-    </footer class="footer__mobile">
-    <footer>
-        <div class="footer_company_name">
-            <p>ООО «Аврора» 2014 - 2020</p>
-        </div>
-        <div class="social_media">
-            <a href="">
-                <i class="fab fa-vk"></i> </a>
-            <a href="">
-                <i class="fab fa-facebook-f"></i> </a>
-            <a href="">
-                <i class="fab fa-odnoklassniki"></i> </a>
-            <a href="">
-                <i class="fas fa-at"></i> </a>
-            <a href="">
-                <i class="fab fa-twitter"></i> </a>
-            <a href="">
-                <i class="fab fa-instagram"></i> </a>
-        </div>
-        <div class="site_developer">
-            <p>Разработка сайта</p>
-            <a target="_blank" href="https://alianscompany.ru/">
-                <img src="./wp-content/themes/Avrora/img//developer_logo.png" alt="">
-            </a>
-        </div>
-    </footer>
-    <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img class="modal_img" src="./wp-content/themes/Avrora/img/flat_3d_floors.png" alt="">
+            <img class="modal_img" src="" alt="">
         </div>
     </div>
+    <div id="contact_form" class="modal">
+        <div class="modal-content contact">
+            <span class="close contact">&times;</span>
+            <?php
+    echo do_shortcode('[contact-form-7 id="123" title="задать вопрос"]');
+    ?>
+        </div>
+    </div>
+    </main>
     <?php
-	    wp_footer();
-	?>
-</body>
-
-</html>
+        get_footer();

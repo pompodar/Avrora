@@ -1,0 +1,47 @@
+.service_title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.services__slider.single {
+    padding: 4rem;
+    margin-top: 0;
+    width: 130%
+}
+
+.header__top__mobile__bottom {
+    display: none;
+}
+
+.container__single {
+    display: flex;
+}
+
+.owl__carousel__not__slider {
+    display: block;
+}
+
+.service__description__single {
+    padding: 4rem 4rem 4rem 2rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 575px) {
+    .container__single {
+        flex-direction: column;
+    }
+    .services__slider.single {
+        width: 100%
+    }
+    #primary {
+        margin-top: 5rem !important;
+    }
+}
+
+#primary {
+    margin-top: 10rem;
+}
+
+.contacts.contacts {
+    padding-top: 5rem;
+}
